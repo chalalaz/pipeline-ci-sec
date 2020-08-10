@@ -4,6 +4,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'echo \'test\''
+	sh 'echo ${ls}'
       }
     }
     stage('fortify scan'){
